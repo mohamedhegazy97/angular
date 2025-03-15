@@ -16,8 +16,5 @@ export class PostCreateComponent {
     onAddPost() {
 
         this.newPost = this.enteredValue;
-        // this.newPost = postInput.value;
-        // this.newPost = 'the user\'s post';
-        // alert('postAdded')
     }
 }
