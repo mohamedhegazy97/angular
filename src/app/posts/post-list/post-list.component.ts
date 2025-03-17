@@ -3,6 +3,7 @@ import { MatExpansionPanel } from "@angular/material/expansion";
 import { MatAccordion } from "@angular/material/expansion";
 import { MatExpansionPanelHeader } from "@angular/material/expansion";
 import { MatExpansionPanelTitle } from "@angular/material/expansion";
+import { MatExpansionModule } from "@angular/material/expansion";
 import { CommonModule } from "@angular/common";
 import { Post } from "../post.model";
 import { PostsService } from "../posts.service";
@@ -11,7 +12,7 @@ import { Subscription } from "rxjs";
 
 @Component({
     selector: 'app-post-list',
-    imports: [MatExpansionPanel, MatAccordion, MatExpansionPanelHeader, MatExpansionPanelTitle, CommonModule],
+    imports: [MatExpansionPanel, MatAccordion, MatExpansionPanelHeader, MatExpansionPanelTitle, CommonModule, MatExpansionModule],
     templateUrl: './post-list.component.html',
     styleUrls: ['./post-list.component.scss']
 })
